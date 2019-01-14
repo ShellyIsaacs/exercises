@@ -1,161 +1,120 @@
-<!DOCTYPE html>
-<!--
-Name: Shelly Isaacs
-Date Created: 1/4/2019
-Most Recent Revision:
--->
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Menu</title>
 
-  <title>Menu</title>
-
-  <!--bootstrap stylesheet
+    <!--Bootstrap CDN CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    -->
-  <!--style sheet for social media icons-->
+
+    <!--Font Awesome CDN CSS for icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--style sheet for font-->
+
+    <!--Google Font CDN CSS for header-->
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
-  <!--internal style sheet-->
+
+    <!--external style sheet-->
     <link href="styles/restaurantStyles.css" type="text/css" rel="stylesheet"/>
 
-  <style>
-    #food {
-      width:100%;
-      text-align:center;
-      margin: 20px auto 0 auto;
-      padding-bottom: 10px;
-    }
-    #food td {
-      vertical-align: top;
-      font-size:1em;
-      padding: 0 20px 30px 20px;
-    }
-    #food th {
-      vertical-align: top;
-      font-size:1.1em;
-      padding: 15px 20px 0 20px;
-    }
-    #beverages {
-      padding-top: 20px;
-      width: 100%;
-      margin: 20px auto;
-      border: 4px solid #f5fbf2;
-    }
-    #beverages td {
-      vertical-align: middle;
-      font-size: 1em;
-      text-align: left;
-      padding:15px 20px;
-    }
-    #beverages tr:nth-child(even) {
-      background-color: #f5fbf2;
-    }
-    #beverages th {
-      vertical-align: middle;
-      text-align: left;
-      font-size: 1.1em;
-      padding:0 0 15px 20px;
-    }
-  </style>
-</head>
+    <style>
 
-<body>
+    </style>
 
-  <header>
-    <h1>The Garden Cafe</h1>
-  </header>
+  </head>
 
-  <nav>
-    <a href="index.html" target="_self" class="button">Home</a>
-    <a href="menu.html" target="_self" class="button">Menu</a>
-    <a href="contact.html" target="_self" class="button">Contact Us</a>
-    <div id="badge-bar">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-instagram"></a>
+  <body>
+    <div class="container-fluid">
+
+      <header class="jumbotron-fluid">
+        <h1>The Garden Cafe</h1>
+      </header>
+
+      <nav class="nav">
+          <a href="index.html" target="_self" class="fa fa-home fa-3x" aria-hidden="true"></a>
+          <a href="menu.html" target="_self" class="btn badge-pill" >Menu</a>
+          <a href="contact.html" target="_self" class="btn badge-pill" >Contact Us</a>
+      </nav>
+
+    <div style="padding:10px">
+      <table id="food" class="table table-borderless table-responsive" style="text-align:center;">
+
+        <tr>
+          <th>Tomato Herb Sandwich</th>
+          <th>Cucumber Herb Sandwich</th>
+          <th>Grilled Cheese Delight</th>
+        </tr>
+
+        <tr>
+          <td>
+          Taste the garden with tomatoes, scallions, fresh ground pepper, and herbed cream cheese on pumpernickel bread. Served with a seasonal garden salad.<br>$10
+          </td>
+
+          <td>
+          Feel refreshed with cucumber, scallions, sunflower seeds, and herbed cream cheese on whole grain bread. Served with a seasonal garden salad.<br>$10
+          </td>
+
+          <td>
+          Experience comfort with a delicious, buttery double cream gouda, with a zing of whole grain mustard, on whole wheat bread. Served with a cup of herbed tomato soup.<br>$12
+          </td>
+        </tr>
+
+        <tr>
+          <th>Curried Chicken Sandwich</th>
+          <th>Garden Club Sandwich</th>
+          <th>Sweet Ham Sandwich</th>
+        </tr>
+
+          <td>
+          Indulge in a warm curried chicken salad made with grapes, celery, and walnuts, topped with micro-greens and served open-faced on a hearty, whole grain slice of bread. Served with a seasonal garden salad.<br>$12
+          </td>
+
+          <td>
+          The garden take on an old favorite: Sliced rosemary ham, oven-roasted turkey, and a gruyere-cheddar cheese, with red onions, parsley, lettuce, and whole grain mustard on a light, buttered brioche bread. Served with a cup of herbed tomato soup.<br>$12
+          </td>
+
+          <td>
+          Get cozy with warm ham and brie with fresh mangos and plum preserves, topped with micro-greens and served open-faced on a hearty, whole grain slice of bread. Served with a cup of leek and potato soup.<br>$13
+          </td>
+
+        </tr>
+      </table>
+
+      <table id="beverages" class="table table-borderless">
+        <tr>
+          <th colspan="2">Beverages</th>
+        </tr>
+
+        <tr class="table-light">
+          <td>Hot Tea</td>
+          <td>$3.00</td>
+        </tr>
+        <tr>
+          <td>Coffee</td>
+          <td>$1.00</td>
+        </tr>
+        <tr class="table-light">
+          <td>Lemonade</td>
+          <td>$1.25</td>
+        </tr>
+        <tr>
+          <td>Iced Tea</td>
+          <td>$1.25</td>
+        </tr>
+      </table>
     </div>
-    <div class="clear-float"></div>
-  </nav>
+      <footer class="jumbotron-fluid">
+        <p>300 Sweet Street, Louisville, KY, 40207<br>555-789-4000</p>
+      </footer>
 
-  <section>
-    <table id="food">
+    </div>
 
-      <tr>
-        <th>Tomato Herb Sandwich</th>
-        <th>Cucumber Herb Sandwich</th>
-        <th>Grilled Cheese Delight</th>
-      </tr>
-
-      <tr>
-        <td>
-        Taste the garden with tomatoes, scallions, fresh ground pepper, and herbed cream cheese on pumpernickel bread. Served with a seasonal garden salad.<br>$10
-        </td>
-
-        <td>
-        Feel refreshed with cucumber, scallions, sunflower seeds, and herbed cream cheese on whole grain bread. Served with a seasonal garden salad.<br>$10
-        </td>
-
-        <td>
-        Experience comfort with a delicious, buttery double cream gouda, with a zing of whole grain mustard, on whole wheat bread. Served with a cup of herbed tomato soup.<br>$12
-        </td>
-      </tr>
-
-      <tr>
-        <th>Curried Chicken Sandwich</th>
-        <th>Garden Club Sandwich</th>
-        <th>Sweet Ham Sandwich</th>
-      </tr>
-
-        <td>
-        Indulge in a warm curried chicken salad made with grapes, celery, and walnuts, topped with micro-greens and served open-faced on a hearty, whole grain slice of bread. Served with a seasonal garden salad.<br>$12
-        </td>
-
-        <td>
-        The garden take on an old favorite: Sliced rosemary ham, oven-roasted turkey, and a gruyere-cheddar cheese, with red onions, parsley, lettuce, and whole grain mustard on a light, buttered brioche bread. Served with a cup of herbed tomato soup.<br>$12
-        </td>
-
-        <td>
-        Get cozy with warm ham and brie with fresh mangos and plum preserves, topped with micro-greens and served open-faced on a hearty, whole grain slice of bread. Served with a cup of leek and potato soup.<br>$13
-        </td>
-
-      </tr>
-    </table>
-
-    <table id="beverages">
-      <tr>
-        <th colspan="2">Beverages</th>
-      </tr>
-
-      <tr>
-        <td>Hot Tea</td>
-        <td>$3.00</td>
-      </tr>
-      <tr>
-        <td>Coffee</td>
-        <td>$1.00</td>
-      </tr>
-      <tr>
-        <td>Lemonade</td>
-        <td>$1.25</td>
-      </tr>
-      <tr>
-        <td>Iced Tea</td>
-        <td>$1.25</td>
-      </tr>
-    </table>
-  </section>
-
-  <footer>
-    <p>300 Sweet Street, Louisville, KY, 40207<br>555-789-4000</p>
-  </footer>
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
