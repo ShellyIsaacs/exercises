@@ -2,48 +2,152 @@
 <!--
   Name: Shelly Isaacs
   Date Created: 12/12/2018
-  Most Recent Revision: 12/16/2018
+  Most Recent Revision: 1/4/2019
   -->
 <html lang="en">
 <head>
   <title>Shelly's Portfolio</title>
+  <link href="styles/main.css" type="text/css" rel="stylesheet"/>
+  <style>
+    caption {
+      font-weight:bold;
+      font-size:1.2em;
+      margin-bottom:8px;
+      color: #233e70;
+    }
+    table, th, td {
+      border: 1px #2c3539 solid;
+      border-collapse: collapse;
+      padding: 5px 10px;
+    }
+    table {
+      width:90%;
+      margin:auto;
+    }
+    tr {
+      height: 30px;
+    }
+    th {
+      background-color: #233e70;
+      color: #fffaef;
+    }
+    table tr:nth-child(odd) {
+      background-color: #efe5cb;
+    }
+
+    article img {
+      float:left;
+    }
+
+    article {
+        margin-bottom: 16px;
+    }
+  </style>
 </head>
+
 <body>
   <main>
   <header>
     <h1>Portfolio for Shelly Isaacs</h1>
   </header>
+
   <nav>
-    <hr />
-    <p><a href="projects.html">Projects</a></p>
-    <p><a href="testimonials.html">Testimonials</a></p>
-    <p><a href="contact.html">Contact</a></p>
-    <hr />
+    <p><a href="projects.html" target="_self">Projects</a></p>
+    <p><a href="testimonials.html" target="_self">Testimonials</a></p>
+    <p><a href="contact.html" target="_self">Contact</a></p>
+    <div class="clear-float"></div>
   </nav>
+
   <section>
     <article id="about-me">
       <h2><em>About Me</em></h2>
-      <img src="images/aboutme350.jpg" alt="Headshot photo of Shelly" style="border: thin black solid; width: 300px;" />
-      <p>text about me</p>
-      <p>more text about me</p>
+      <img src="images/aboutme350.jpg" alt="Headshot photo of Shelly" width="250" />
+      <p>I am currently an apprentice learning Java at the Software Guild in Louisville, KY. I have studied and worked professionally as a <strong>researcher and graduate instructor</strong> in the field of sociology for over a decade. During this time, some of my most enjoyable collaborations have been with teams <strong>developing websites for data analysis and presentation</strong>. As an apprentice at the Software Guild, I am learning skills that I hope will enable me to build tools like these.</p>
+      <p>Music and art are part of my everyday life. In my personal time, I enjoy songwriting and photography. I unwind by learning a new Chopin sonata. In the past, I have had opportunities to explore ceramics and to <strong>film and edit an educational documentary</strong> overseas.</p>
     </article>
+    <div class="clear-float"></div>
+
     <article id="past-experiences">
       <h2><em>Past Experiences</em></h2>
-      <img src="images/experience350.jpg" alt="Photo of Shelly presenting data at Louisville Urban League" style="border: thin black solid; width: 300px;" />
-      <p>My professional background is in <span style="background-color: lightgreen; border: thick dotted black;">data analysis and presentation.</span> Specifically, I have worked as a researcher and teacher in the field of sociology.</p>
-      <p>more text about past experiences</p>
+      <img src="images/experience350.jpg" alt="Photo of Shelly presenting data at Louisville Urban League" width="250" />
+      <div class="right-content">
+      <table>
+        <caption>Employment History</caption>
+        <thead>
+          <tr>
+            <th>Years of Employment</th>
+            <th>Title</th>
+            <th>Company</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2019-Present</td>
+            <td>Apprentice</td>
+            <td>The Software Guild</td>
+          </tr>
+          <tr>
+            <td>2017-2018</td>
+            <td>Research Assistant, Instructor</td>
+            <td>University of Louisville</td>
+          </tr>
+          <tr>
+            <td>2015-2017, 2010-2012</td>
+            <td>Research Consultant</td>
+            <td>Tyndale House Foundation</td>
+          </tr>
+          <tr>
+            <td>2012-2014</td>
+            <td>Graduate Research Assistant</td>
+            <td>Baylor University</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="clear-float"></div>
     </article>
+
     <article id="hobbies">
       <h2><em>Hobbies</em></h2>
-      <img src="images/hobbies350.jpg" alt="Photo of sheet music" style="border: thin black solid; width: 300px;" />
-      <p>I studied videography, studio art, set design, and music composition in college. Today, I enjoy practicing <span style="background-color: lightblue; border: thin black solid;">art and music</span> through my hobbies, like photography, songwriting, recording and editing audio and video, and learning new music and new instruments. I am currently learning a new Chopin waltz on the piano, and I have just begun playing the violin. The most fun I have had recently with my hobbies is photoshopping myself into all of my friend's wedding and honeymoon pictures.</p>
-      <p>more text about hobbies</p>
+      <img src="images/hobbies350.jpg" alt="Photo of sheet music" width="250" />
+      <div class="right-content">
+        <ul>
+          <li>Authors</li>
+            <ol>
+              <li>Brandon Sanderson</li>
+              <li>Georgette Heyer</li>
+              <li>Terry Pratchett</li>
+            </ol>
+          <li>Anime</li>
+            <ol>
+              <li>Hayao Miyazaki films</li>
+              <li>One Punch Man</li>
+              <li>Great Teacher Onizuka</li>
+            </ol>
+        </ul>
+        <ul>
+          <li>Outdoor Activities</li>
+            <ul>
+              <li>Forest bathing</li>
+              <li>Photography</li>
+              <li>Gardening</li>
+            </ul>
+          <li>Musical Activities</li>
+            <ul>
+              <li>Songwriting</li>
+              <li>Recording and editing</li>
+              <li>Playing Chopin piano sonatas</li>
+            </ul>
+        </ul>
+      </div>
     </article>
+    <div class="clear-float"></div>
   </section>
+
   <footer>
-    <hr />
     <p>&copy; 2018 Shelly Isaacs. All rights reserved.</p>
   </footer>
+
   </main>
 </body>
 </html>

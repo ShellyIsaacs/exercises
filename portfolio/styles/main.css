@@ -1,0 +1,75 @@
+/*
+Creator: Shelly Isaacs
+Date created: 1/11/19
+Date last modified: 1/11/19
+*/
+
+body {
+  color: #2c3539;
+  background-color: #fffaef;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header, footer {
+  background-color: #233e70;
+  color: #fff;
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+nav {
+  border-top: 3px dashed #233e70;
+  border-bottom: 3px dashed #233e70;
+  margin-top: 4px;
+}
+
+.right-content {
+  float:left;
+}
+
+.clear-float {
+  clear:both;
+}
+
+nav a {
+  background-color: #233e70;
+  color: #fffaef;
+  padding: 8px;
+  border: thin solid #2c3539;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 20px;
+  width: 100px;
+  float: left;
+}
+
+nav a:visited {
+  color: #d6c089;
+}
+
+nav a:hover {
+  color: #233e70;
+  background-color: #fffaef;
+}
+
+nav a:active {
+  font-weight:bold;
+}
+
+p {
+  line-height:150%;
+}
+
+a img {
+  float: left;
+  padding: 10px
+}
