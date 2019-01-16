@@ -63,29 +63,29 @@
 
       <form action="submit.html" method="POST" class="form">
         <div class="form-group row">
-          <label class="col-form-label" for="name">Name:</label>
+          <label class="col-form-label" for="name" id="nameLabel">Name:</label>
           <div>
-            <input class="form-control" type="text" name="name" id="name"><br><br>
+            <input class="form-control" type="text" name="name" id="name" required><br><br>
           </div>
         </div>
 
         <div class="form-group row">
           <label class="col-form-label" for="email">Email:</label>
           <div>
-            <input class="form-control" type="text" name="email" id="email"><br><br>
+            <input class="form-control" type="text" name="email" id="email" required><br><br>
           </div>
         </div>
 
         <div class="form-group row">
           <label class="col-form-label" for="phone">Phone:</label>
           <div>
-            <input class="form-control" type="text" name="phone" id="phone"><br><br>
+            <input class="form-control" type="text" name="phone" id="phone" required><br><br>
           </div>
         </div>
 
         <div class="form-group row">
           <label class="col-form-label" for="addInfo" style="vertical-align:top;">Additional Information:</label>
-          <textarea class="form-control" name="addInfo" id="addInfo" rows="4" cols="20"></textarea><br><br>
+          <textarea class="form-control" name="addInfo" id="addInfo" rows="4" cols="3"></textarea><br><br>
         </div>
 
           <div class="form-group row">
@@ -140,7 +140,7 @@
 
           <div class="form-group">
             <div class="row">
-              <button type="submit" class="btn">Submit</button>
+              <button type="submit" class="btn" onclick="validateForm()">Submit</button>
             </div>
           </div>
       </div>
